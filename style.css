@@ -1,103 +1,53 @@
-/* 기본 초기화 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #121212; /* 다크 모드 배경 */
+    background-color: #121212; /* 다크 테마 */
     color: white;
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    font-family: 'Pretendard', sans-serif;
+    margin: 0;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
 .container {
     width: 100%;
-    max-width: 400px;
+    max-width: 400px; /* 모바일 사이즈 고정 */
     text-align: center;
 }
 
-/* 앨범 아트워크 */
 .album-art {
-    width: 250px;
-    height: 250px;
-    border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-    margin-bottom: 25px;
-    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 1.6rem;
-    margin-bottom: 8px;
-    font-weight: 700;
-}
+h1 { font-size: 1.5rem; margin-bottom: 5px; }
+p { color: #aaa; margin-bottom: 30px; }
 
-.artist-name {
-    color: #b3b3b3;
-    font-size: 1rem;
-    margin-bottom: 40px;
-}
+/* 링크 카드 스타일 */
+.links { display: grid; gap: 15px; }
 
-/* 링크 리스트 영역 */
-.links {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-/* 개별 링크 카드 */
 .link-card {
-    background: rgba(255, 255, 255, 0.08); /* 반투명 배경 */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 8px;
     text-decoration: none;
     color: white;
     display: flex;
     align-items: center;
-    padding: 14px 20px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
+    transition: background 0.3s;
 }
 
-.link-card:hover {
-    background: rgba(255, 255, 255, 0.15);
-}
+.link-card:hover { background: rgba(255, 255, 255, 0.2); }
 
-.platform-icon {
-    width: 28px;
-    height: 28px;
-    margin-right: 15px;
-    border-radius: 4px;
-}
+.link-card img { width: 30px; height: 30px; margin-right: 15px; }
 
-.link-card span {
-    flex-grow: 1;
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 500;
-}
+.link-card span { flex-grow: 1; text-align: left; font-weight: bold; }
 
-/* 요청하신 하얀색 Play 버튼 */
 .btn {
-    background-color: #ffffff; /* 배경 하얀색 */
-    color: #121212;            /* 글자 검정색 */
-    padding: 6px 16px;
+    border: 1px solid white;
+    padding: 5px 15px;
     border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: transform 0.2s ease;
-}
-
-.link-card:hover .btn {
-    transform: scale(1.05); /* 카드에 마우스 올리면 버튼이 살짝 커짐 */
-}
-
-footer {
-    margin-top: 50px;
-    color: #666;
     font-size: 0.8rem;
 }
