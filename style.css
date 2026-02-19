@@ -43,7 +43,7 @@ p { color: #aaa; margin-bottom: 30px; }
 
 .link-card img { width: 30px; height: 30px; margin-right: 15px; }
 
-.link-card span { flex-grow: 1; text-align: left; font-weight: bold; }
+.link-card span { flex-grow: 1; text-align: left; font-weight: bold; color: black; }
 
 .btn {
     background-color: #ffffff; /* 배경색 하얀색 */
