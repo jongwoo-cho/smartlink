@@ -46,8 +46,8 @@ p { color: #aaa; margin-bottom: 30px; }
 .link-card span { flex-grow: 1; text-align: left; font-weight: bold; }
 
 .btn {
-    border: 1px solid white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    background-color: #ffffff; /* 배경색 하얀색 */
+    color: #121212;            /* 글자색 검정색 (배경과 대비) */
+    transition: transform 0.2s; /* 누르는 느낌을 위한 효과 */
+}
 }
